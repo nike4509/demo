@@ -1,0 +1,28 @@
+<html>
+<head><script type="text/javascript" src="jquery.js"></script>
+</head>
+<body>
+
+<img src="images/plus.jpg" class="a" width="100px" height="80px">
+<br>
+<img src="images/a.jpg" class="img1" width="100px">
+
+<script>
+$(".a").click(function()
+{
+var ab= $(".a").attr("src");
+if(ab=="images/plus.jpg")
+{
+$(".a").attr("src","images/minus.jpg");
+$(".img1").hide();
+}
+else
+{
+$(".a").attr("src","images/plus.jpg");
+$(".img1").show();
+}
+})
+
+</script>
+</body>
+</html>
